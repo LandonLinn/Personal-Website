@@ -1,0 +1,91 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.279) 2px 2px 4px;
+    min-height: 350px;
+}
+
+.portCard-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.portCard-content h2{
+    color: #fa940d;
+    margin: 0px;
+}
+
+.cardTag{
+    background-color: #a2effc;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: .8rem;
+}
+
+.portCard-img{
+    width: 100%;
+    aspect-ratio: 16/8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.projDesc{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.portCard-Links{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailsButt{
+    height: 25px;
+    border: 2px solid #fa940d;
+    border-radius: 8px;
+    width: 25%;
+    min-width: 100px;
+    color: #fa940d;
+    background: none;
+    font-weight: 700;
+}
+
+.detailsButt:hover{
+    cursor: pointer;
+    background: #fa940d;
+    color: white;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    transition: fill 0.3s ease;
+  }
+
+  .external-link{
+    width: 16px;
+    height: auto;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

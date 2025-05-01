@@ -1,0 +1,35 @@
+.portfolio-container {
+    grid-area: portfolio;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.portCard-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px; 
+}
+
+.viewAllButt{
+    height: 50px;
+    border: 2px solid #fa940d;
+    border-radius: 8px;
+    width: 200px;
+    min-width: 200px;
+    background: none;
+    color: #fa940d;
+    font-weight: 700;
+}
+
+.viewAllButt:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #fa940d;
+}
+
+.viewAll-container{
+    display: flex;
+    justify-content: center;
+}

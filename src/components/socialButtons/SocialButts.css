@@ -1,0 +1,24 @@
+.social-butts{
+    display: flex;
+    gap: 6px;
+}
+
+.socialLink{
+    display: flex;
+    background: gray;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.socialLink:hover{
+    cursor: pointer;
+    background: rgb(110, 110, 110);
+}
+
+.socialLink img{
+    max-width: 20px;
+    max-height: 20px;
+    margin: auto auto;
+}

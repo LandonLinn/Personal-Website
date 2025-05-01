@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.app-container{
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    grid-template-areas: 
+        "header header header"
+        " . hero ."
+        "about about about"
+        ". portfolio ."
+        ". skills ."
+        ". contact ."
+        ". hire ."
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+hr{
+    border: 1px solid white;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.content-wrapper{
+    grid-area: inside;
+}
+
+.title{
+    color: #fa940d;
+}
+
+.header{
+    grid-area: header;
+}
+
+.hero{
+    grid-area: hero;
+}
+
+.about{
+    grid-area: about;
+}
+
+.portfolio{
+    grid-area: portfolio;
+}
