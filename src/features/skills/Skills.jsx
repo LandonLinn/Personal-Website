@@ -1,9 +1,16 @@
 import React from "react";
 import "./Skills.css";
 
+// Import UseState
+import { useState } from "react";
+
 const Skills = () => {
 
+    // Store Year
     let year = new Date().getFullYear();
+    
+    // Use State for Selecting Categories
+    const [selectedCategory, setSelectedCategory] = useState("all");
 
     // Array for Categories
     const categories = [
@@ -59,15 +66,15 @@ const Skills = () => {
             experience: year - 2022,
             category: "ai",
         },
+
+        // Development Languages
         {
             id: "3",
             icon: "../src/assets/icons/Skills/HTML.png",
             name: "HTML",
             experience: year - 2022,
-            category: "ai",
+            category: "devlang",
         },
-
-        // Development Languages
         {
             id: "4",
             icon: "../src/assets/icons/Skills/CSS.png",
@@ -203,16 +210,167 @@ const Skills = () => {
             icon: "../src/assets/icons/Skills/django ORM.png",
             name: "Django ORM",
             experience: year - 2024,
-            category: "tools",
+            category: "db",
         },
 
         // Tools
         {
             id: "23",
-            icon: "../src/assets/icons/Skills/.png",
-            name: "",
+            icon: "../src/assets/icons/Skills/Git.png",
+            name: "Git",
+            experience: year - 2023,
+            category: "tools",
+        },
+        {
+            id: "24",
+            icon: "../src/assets/icons/Skills/github-icon-colored.png",
+            name: "Github",
+            experience: year - 2023,
+            category: "tools",
+        },
+        {
+            id: "25",
+            icon: "../src/assets/icons/Skills/figma.png",
+            name: "Figma",
+            experience: year - 2023,
+            category: "tools",
+        },
+        {
+            id: "26",
+            icon: "../src/assets/icons/Skills/MSoffice.png",
+            name: "Microsoft Office",
+            experience: year - 2023,
+            category: "tools",
+        },
+        {
+            id: "27",
+            icon: "../src/assets/icons/Skills/photoshop.png",
+            name: "Adobe Photoshop",
+            experience: year - 2019,
+            category: "tools",
+        },
+        {
+            id: "28",
+            icon: "../src/assets/icons/Skills/Illustrator.png",
+            name: "Adobe Illustrator",
             experience: year - 2024,
-            category: "db",
+            category: "tools",
+        },
+        {
+            id: "29",
+            icon: "../src/assets/icons/Skills/docker.png",
+            name: "Docker",
+            experience: year - 2024,
+            category: "tools",
+        },
+        {
+            id: "30",
+            icon: "../src/assets/icons/Skills/kubernetes.png",
+            name: "Kubernetes",
+            experience: year - 2024,
+            category: "tools",
+        },
+        {
+            id: "31",
+            icon: "../src/assets/icons/Skills/openshift.png",
+            name: "OpenShift",
+            experience: year - 2024,
+            category: "tools",
+        },
+
+        // Cloud & DevOps
+        {
+            id: "32",
+            icon: "../src/assets/icons/Skills/aws.png",
+            name: "AWS",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "33",
+            icon: "../src/assets/icons/Skills/azure.png",
+            name: "Microsoft Azure",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "34",
+            icon: "../src/assets/icons/Skills/google cloud.png",
+            name: "Google Cloud",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "35",
+            icon: "../src/assets/icons/Skills/IBM Cloud.png",
+            name: "IBM Cloud",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "36",
+            icon: "../src/assets/icons/Skills/Dev Ops.png",
+            name: "DevOps (CI/CD Pipelines)",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "37",
+            icon: "../src/assets/icons/Skills/serverless.png",
+            name: "Serverless Technologies",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "38",
+            icon: "../src/assets/icons/Skills/microservices.png",
+            name: "Microservices",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+        {
+            id: "39",
+            icon: "../src/assets/icons/Skills/cloud native.png",
+            name: "Cloud-Native Development",
+            experience: year - 2024,
+            category: "cloudops",
+        },
+
+        // Personal
+        {
+            id: "40",
+            icon: "../src/assets/icons/Skills/tech aptitude.png",
+            name: "Solid Technical Aptitude",
+            experience: "",
+            category: "pers",
+        },
+        {
+            id: "41",
+            icon: "../src/assets/icons/Skills/group leader.png",
+            name: "Group Leadership",
+            experience: "",
+            category: "pers",
+        },
+        {
+            id: "42",
+            icon: "../src/assets/icons/Skills/group leader.png",
+            name: "Group Leadership",
+            experience: "",
+            category: "pers",
+        },
+        {
+            id: "43",
+            icon: "../src/assets/icons/Skills/agile.png",
+            name: "Agile Methodologies",
+            experience: "",
+            category: "pers",
+        },
+        {
+            id: "44",
+            icon: "../src/assets/icons/Skills/software arch.png",
+            name: "Software Architecture Principles",
+            experience: "",
+            category: "pers",
         },
 
     ];
@@ -228,22 +386,38 @@ const Skills = () => {
 
             {/* Dropdown Selection */}
             <div className="skillFilters-container">
-                <select name="skill-filters" id="skill-filters">
+                <select 
+                    name="skill-filters" 
+                    id="skill-filters"
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                >
                 
                     {categories.map((categoryName) => 
-                        <option value={categoryName.value}>{categoryName.name}</option>          
+                        <option 
+                            key={categoryName.value}
+                            value={categoryName.value}
+                        >
+                            {categoryName.name}
+                        </option>          
                     )}
                 </select> 
             </div>
 
             {/* Skill Cards */}
             <div className="skillCard-container">
-                    {skills.map((skill) =>
+                    {skills
+                    .filter((skill) => 
+                        selectedCategory === "all" || skill.category === selectedCategory // Filter out categories
+                    )
+                    .map((skill) =>
                         <div className="skillCard">
                             <div className="skillCard-content">
                                 <img src={skill.icon} alt={skill.name} />
                                 <h3>{skill.name}</h3>
-                                <p>{skill.experience} Years of Experience</p>
+                                {skill.experience !== "" && (
+                                    <p>{skill.experience} Years of Experience</p>
+                                )}
                             </div>
                         </div>
                     )}

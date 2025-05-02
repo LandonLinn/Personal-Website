@@ -60,7 +60,7 @@ const Portfolio = () => {
             </div>
 
             <div className="viewAll-container">
-                <Link to="/portfolio">
+                <Link to="/Portfolio">
                     <button className="viewAllButt">View All</button>
                 </Link>
             </div>

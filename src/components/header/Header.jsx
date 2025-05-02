@@ -82,7 +82,7 @@ const Header = () => {
                             Skills
                         </ScrollLink>
                         <Link 
-                            to="/hire"
+                            to="/Hire"
                             onClick={toTop}
                         >
                             <a href="hire.html">

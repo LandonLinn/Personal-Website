@@ -15,14 +15,11 @@ const Hero = () => {
                 <div class="hero-description">
                     <h1>Hey, I'm <span>Landon Linn</span></h1>
                     <h3>Software Developer</h3>
-                    <p>I'm a passionate web developer and UX designer with a strong focus on building engaging, user-friendly experiences. With expertise in HTML, CSS, JavaScript, and Python, I create intuitive and scalable websites. I’m always eager to learn and grow, whether it’s through coding, design, or new tech challenges. Let’s connect and create something amazing!</p>
+                    <p>I'm a passionate software developer with a strong foundation in UX design, focused on creating intuitive, user-centered software solutions. With experience in HTML, CSS, JavaScript, and Python, I build scalable websites that not only function well—but feel great to use. I’m always eager to grow through coding, design, and solving real-world tech challenges. Let’s connect and build something amazing!</p>
                     <ResumeDown />
                     <SocialButts />
                 </div>
             </div>
-            {/* <div class="wave-divider">
-                <img src="assets/wave-divider.svg" alt="">
-            </div> */}
         </section>
     );
 };
