@@ -2,11 +2,11 @@ import React from "react";
 import "./Portcard.css"
 
 
-const Portcard = ({img, title, tag, desc, demoLink, onDetailsClick}) => {
+const Portcard = ({coverImg, title, tag, desc, demoLink, onDetailsClick}) => {
     return(
         <div className="card-container">
 
-            <img className="portCard-img" src={img} alt={title} />
+            <img className="portCard-img" src={coverImg} alt={title} />
             
             <div className="portCard-content">
                 <p className="cardTag">{tag}</p>

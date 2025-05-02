@@ -5,7 +5,43 @@ import "./Footer.css";
 import ResumeDown from "../../components/resumeButton/ResumeDown";
 import SocialButts from "../../components/socialButtons/SocialButts";
 
+// Import React elements
+import { Link } from "react-router";
+import { Link as ScrollLink } from "react-scroll";
+import { useLocation, useNavigate } from "react-router";
+
 const Footer = () => {
+
+    // Year
+    let year = new Date().getFullYear();
+
+    const location = useLocation(); // Store useLocation as const variable
+    const navigate = useNavigate(); // Store useNavigate as const variable
+
+    // If location is on home, scroll to top of Home, else navigate to homepage
+    const handleHomeClick = () => {
+        if (location.pathname === "/") {
+            window.scrollTo({top: "0", behavior: "smooth"});
+        }
+        else{
+            navigate("/");
+            window.scrollTo({top: "0"});
+        }
+    };
+
+    const handleAboutClick = () => {
+        navigate("/", {state: { scrollTo: "about-section" } });
+    };
+
+    const handlePortClick = () => {
+        navigate("/", {state: { scrollTo: "portfolio-section" } });
+    };
+
+    const handleSkillsClick = () => {
+        navigate("/", {state: { scrollTo: "skills-section" } });
+    };
+
+
     return(
         <footer>
             <div class="content-wrapper">
@@ -26,6 +62,37 @@ const Footer = () => {
                     <div class="footer-nav-container">
                         <div class="footer-nav">
                             <h3>Explore</h3>
+                            <Link to="/" onClick={handleHomeClick}>Home</Link>
+
+                            <ScrollLink
+                                to="about-container"
+                                onClick={handleAboutClick}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                            >
+                                About
+                            </ScrollLink>
+
+                            <ScrollLink
+                                to="portfolio-container"
+                                onClick={handlePortClick}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                            >
+                                Portfolio
+                            </ScrollLink>
+
+                            <ScrollLink
+                                to="skills-container"
+                                onClick={handleSkillsClick}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                            >
+                                Skills
+                            </ScrollLink>
                             
                         </div>
                         <div class="footer-nav">
@@ -35,7 +102,7 @@ const Footer = () => {
                     </div>
                     
                 </div>
-                <p class="copyright">&#169; 2025 Landon Linn</p>
+                <p class="copyright">&#169; {year} Landon Linn</p>
             </div>
         </footer>
     );

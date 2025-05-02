@@ -81,7 +81,7 @@ const Header = () => {
                         >
                             Skills
                         </ScrollLink>
-                        <Link 
+                        {/* <Link 
                             to="/Hire"
                             onClick={toTop}
                         >
@@ -90,7 +90,7 @@ const Header = () => {
                                     Hire
                                 </button>
                             </a>
-                        </Link>
+                        </Link> */}
                         {/* <Link to="/about">About</Link>
                         <Link to="/portfolio">Portfolio</Link>
                         <Link to="/skills">Skills</Link>

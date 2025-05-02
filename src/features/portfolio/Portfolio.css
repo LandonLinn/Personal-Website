@@ -33,3 +33,27 @@
     display: flex;
     justify-content: center;
 }
+
+/* Modal */
+.modalTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.cardTag{
+    background-color: #a2effc;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: .8rem;
+    height: fit-content;
+}
+
+.modalContent hr {
+    border: 1px solid gray;
+    margin: 20px 0px;
+}
+
+
