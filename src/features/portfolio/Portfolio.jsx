@@ -123,12 +123,12 @@ const Portfolio = () => {
                             <p>{activeProject.role}</p>
                             <br />
                             <h3>Links to Project:</h3>
-                            <p>Live Demo: <a href={activeProject.demoLink} target="blank">Preview</a></p>
+                            <p>Live Demo: <a href={activeProject.demoLink} className="projectLinks" target="blank">Preview</a></p>
                             {activeProject.behanceLink !== "" && (
-                                <p>Project Images: <a href={activeProject.behanceLink} target="blank">Preview</a></p>
+                                <p>Project Images: <a href={activeProject.behanceLink} className="projectLinks" target="blank">Preview</a></p>
                             )}
                             {activeProject.githubLink !== "" && (
-                                <p>Project Files: <a href={activeProject.githubLink} target="blank">Preview</a></p>
+                                <p>Project Files: <a href={activeProject.githubLink} className="projectLinks" target="blank">Preview</a></p>
                             )}
 
                             <hr />

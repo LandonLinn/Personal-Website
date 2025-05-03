@@ -87,3 +87,13 @@
     height: 400px;
 }
 
+.projectLinks{
+    text-decoration: none;
+    color: gray;
+}
+
+.projectLinks:hover{
+    text-decoration: underline;
+    color: #fa940d;
+}
+

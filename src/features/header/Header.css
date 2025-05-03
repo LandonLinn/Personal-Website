@@ -61,3 +61,36 @@ header{
     background-color: #fa940d;
     color: white;
 }
+
+/* Hamburger Menu */
+.hamburger-menu{
+    display: none;
+}
+
+.hamLine{
+    height: 20%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Responsivenss */
+@media screen and (max-width: 768px) {
+    header .nav-bar {
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        width: 30px;
+    }
+
+    .header-container{
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+  }
+

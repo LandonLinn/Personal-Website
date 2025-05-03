@@ -36,55 +36,52 @@ const Nav = () => {
     };
 
     return(
-        <nav className="content-wrapper">
-            <div className="nav-bar">
-                <Link to="/" onClick={handleHomeClick}>Home</Link>
+        <nav className="nav-bar-links">
+            <Link to="/" onClick={handleHomeClick}>Home</Link>
 
-                <ScrollLink
-                    to="about-container"
-                    onClick={handleAboutClick}
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                >
-                    About
-                </ScrollLink>
+            <ScrollLink
+                to="about-container"
+                onClick={handleAboutClick}
+                smooth={true}
+                duration={500}
+                offset={-80}
+            >
+                About
+            </ScrollLink>
 
-                <ScrollLink
-                    to="portfolio-container"
-                    onClick={handlePortClick}
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                >
-                    Portfolio
-                </ScrollLink>
+            <ScrollLink
+                to="portfolio-container"
+                onClick={handlePortClick}
+                smooth={true}
+                duration={500}
+                offset={-80}
+            >
+                Portfolio
+            </ScrollLink>
 
-                <ScrollLink
-                    to="skills-container"
-                    onClick={handleSkillsClick}
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                >
-                    Skills
-                </ScrollLink>
+            <ScrollLink
+                to="skills-container"
+                onClick={handleSkillsClick}
+                smooth={true}
+                duration={500}
+                offset={-80}
+            >
+                Skills
+            </ScrollLink>
 
-                <Link to="/Contact" onClick={toTop}>Contact</Link>
+            <Link to="/Contact" onClick={toTop}>Contact</Link>
 
-                {/* <Link 
-                    to="/Hire"
-                    onClick={toTop}
-                >
-                    <a href="hire.html">
-                        <button className="small-butt glow">
-                            Hire
-                        </button>
-                    </a>
-                </Link> */}                       
+            {/* <Link 
+                to="/Hire"
+                onClick={toTop}
+            >
+                <a href="hire.html">
+                    <button className="small-butt glow">
+                        Hire
+                    </button>
+                </a>
+            </Link> */}                       
 
-            </div>
-            
         </nav>
     );
 }
