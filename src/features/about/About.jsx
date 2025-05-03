@@ -41,11 +41,16 @@ const About = () => {
                 <em>Summer Internship</em>
                 <ul>
                     <li>Collaborated with senior management to capture business requirements for the redesign of the corporate website,
-                    leading to improved user experience and a measurable increase in traffic and conversions.</li>
+                    leading to improved user experience and a measurable increase in traffic and conversions.
+                    </li>
                     <li>Designed and deployed dynamic website features using Figma for prototyping, Squarespace for hosting, and custom
                     HTML, CSS, and JavaScript, improving site functionality and aesthetics.</li>
                     <li>Conducted iterative user testing and feedback sessions, refining the site based on insights, resulting in a more
                     intuitive and satisfying user experience.</li>
+                    <li>Improved the corporate website by adding features including ability to submit online job applications and resume
+                    uploads, contact messaging, email integration, quote requests, and social media integration with Facebook, LinkedIn,
+                    and Instagram. </li>
+                    <li>Facilitate consultative and programmatic website updates periodically as required by the management team.</li>
                 </ul>
           </div>
         )}

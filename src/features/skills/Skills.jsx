@@ -377,9 +377,7 @@ const Skills = () => {
 
     return(
         <section className="skills-container" id="skills-section">
-            <h1 className="title">Skills</h1>
-
-            {/* Loop for Each Category Button for Filtering */}
+            <h1 className="title">SKILLS</h1>
 
             {/* Dropdown Label */}
             <label htmlFor="skill-filters">Categories:</label>
@@ -387,42 +385,75 @@ const Skills = () => {
             {/* Dropdown Selection */}
             <div className="skillFilters-container">
                 <select 
-                    name="skill-filters" 
-                    id="skill-filters"
-                    value={selectedCategory}
-                    onChange={(e) => setSelectedCategory(e.target.value)}
+                name="skill-filters" 
+                id="skill-filters"
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
                 >
-                
-                    {categories.map((categoryName) => 
-                        <option 
-                            key={categoryName.value}
-                            value={categoryName.value}
-                        >
-                            {categoryName.name}
-                        </option>          
-                    )}
+                {categories.map((categoryName) => (
+                    <option 
+                    key={categoryName.value}
+                    value={categoryName.value}
+                    >
+                    {categoryName.name}
+                    </option>          
+                ))}
                 </select> 
             </div>
 
             {/* Skill Cards */}
             <div className="skillCard-container">
-                    {skills
-                    .filter((skill) => 
-                        selectedCategory === "all" || skill.category === selectedCategory // Filter out categories
-                    )
-                    .map((skill) =>
-                        <div className="skillCard">
+                {selectedCategory === "all" ? (
+                // Grouped view when 'All' is selected
+                Object.entries(
+                    skills.reduce((acc, skill) => {
+                    if (!acc[skill.category]) acc[skill.category] = [];
+                    acc[skill.category].push(skill);
+                    return acc;
+                    }, {})
+                ).map(([category, groupedSkills]) => (
+                    <div key={category} className="skill-category-group">
+                    <h2 className="category-header">
+                    { 
+                        categories.find((cat) => cat.value === category)?.name || category
+                    }
+                    </h2>
+                    <div className="skill-category-grid">
+                        {groupedSkills.map((skill) => (
+                        <div className="skillCard" key={skill.name}>
                             <div className="skillCard-content">
-                                <img src={skill.icon} alt={skill.name} />
-                                <h3>{skill.name}</h3>
-                                {skill.experience !== "" && (
-                                    <p>{skill.experience} Years of Experience</p>
-                                )}
+                            <img src={skill.icon} alt={skill.name} />
+                            <h3>{skill.name}</h3>
+                            {skill.experience !== "" && (
+                                <p>{skill.experience} Years of Experience</p>
+                            )}
                             </div>
                         </div>
-                    )}
+                        ))}
+                    </div>
+                    </div>
+                ))
+                ) : (
+                    // Filtered view for selected category
+                    <div className="skill-category-grid individual">
+                    {skills
+                        .filter((skill) => skill.category === selectedCategory)
+                        .map((skill) => (
+                        <div className="skillCard" key={skill.name}>
+                            <div className="skillCard-content">
+                            <img src={skill.icon} alt={skill.name} />
+                            <h3>{skill.name}</h3>
+                            {skill.experience !== "" && (
+                                <p>{skill.experience} Years of Experience</p>
+                            )}
+                            </div>
+                        </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </section>
+
     );
 }
 

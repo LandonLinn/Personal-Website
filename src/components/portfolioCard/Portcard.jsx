@@ -16,10 +16,10 @@ const Portcard = ({coverImg, title, tag, desc, demoLink, onDetailsClick}) => {
 
             <div className="portCard-Links">
                 <div className="cardLinks">
-                <a href={demoLink} target="_blank" rel="noopener noreferrer" className="card-link">
-                    Live Demo
-                    <img src='../../src/assets/icons/external-link-icon.svg' className="external-link" alt="arrow" />
-                </a>
+                    <a href={demoLink} target="_blank" rel="noopener noreferrer" className="card-link">
+                        Live Demo
+                        <img src='../../src/assets/icons/external-link-icon.svg' className="external-link" alt="arrow" />
+                    </a>
                 </div>
 
                 <button className="detailsButt" onClick={onDetailsClick}>Details</button>

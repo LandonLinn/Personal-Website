@@ -1,81 +1,80 @@
 .about-container {
-    grid-area: about;
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-    grid-template-areas: ". inside .";
-    width: 100%;
-    background-color: #1e82bd;
-    color: white;
-    padding: 10px 50px;
-    z-index: 1;
-  }
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  grid-template-areas: ". inside .";
+  width: 100%;
+  background-color: #1e82bd;
+  color: white;
+  padding: 10px 50px;
+  z-index: 1;
+}
 
+.dropdown-title{
+  margin: 1.5rem 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  .content-wrapper {
-    grid-area: inside;
-  }
+.dropdown-title:hover{
+  color: #fa940d;
+}
 
-  .about-container h2 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .about-container h2:hover {
-    color: #fa940d;
-  }
-  
-  .dropdown-content {
-    margin-top: 0.5rem;
-    padding: 0 1rem;
-    width: 100%;
-    color: white;
-  }
-  
-  .dropdown-content span {
-    color: #fa940d;
-    font-weight: bold;
-  }
-  
-  .certTitle {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .certTitle img {
-    height: 60px;
-    width: auto;
-    object-fit: contain;
-  }
-  
-  .certLink {
-    display: inline-block;
-    margin: 0.5rem 0 1rem;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .certLink:hover {
-    color: #fa940d;
-  }
-  
-  .header-butt {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    padding: 0;
-    cursor: pointer;
-    transition: text-decoration 0.2s ease;
-  }
-  
-  .header-butt:hover {
-    text-decoration: underline;
-  }
+.content-wrapper {
+  grid-area: inside;
+}
+
+.dropdown-content {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  width: 100%;
+  color: white;
+}
+
+.dropdown-content span {
+  color: #fa940d;
+  font-weight: bold;
+}
+
+.certTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.certTitle img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.certLink {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.certLink:hover {
+  color: #fa940d;
+}
+
+.header-butt {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0;
+  cursor: pointer;
+  transition: text-decoration 0.2s ease;
+}
+
+.header-butt:hover {
+  text-decoration: underline;
+}
   

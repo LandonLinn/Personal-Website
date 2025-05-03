@@ -57,3 +57,33 @@
 }
 
 
+.beforeImg-container,
+.afterImg-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0px;
+    
+}
+
+.video,
+.screenshot {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.279) 2px 2px 4px;
+    flex-grow: 1;
+}
+
+/* Size variations */
+.video,
+.screenshot.wide {
+    flex-basis: 60%;
+    height: 300px;
+}
+  
+.screenshot.tall {
+    flex-basis: 30%;
+    height: 400px;
+}
+

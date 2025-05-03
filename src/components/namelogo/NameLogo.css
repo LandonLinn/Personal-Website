@@ -1,0 +1,14 @@
+.logo{
+    width: 65px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header h2, p{
+    margin: 0px;
+}
+
+.name-info{
+    display: flex;
+    align-items: center;
+}
