@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 // Import NAV Component
@@ -10,8 +10,11 @@ import SideMenu from "../../components/sideMenu/SideMenu";
 
 const Header = () => {
 
-    const handleHamMenu = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
+
+    const handleHamMenu = () => {
+        setIsOpen(!isOpen);
     };
 
     return(
@@ -19,14 +22,14 @@ const Header = () => {
             <div className="content-wrapper">
                 <div className="header-container">
                     {/* Hamburger Menu */}
-                    <div className="hamburger-menu" >
+                    <div className="hamburger-menu" onClick={handleHamMenu}>
                         <div className="hamLine"></div>
                         <div className="hamLine"></div>
                         <div className="hamLine"></div>
                     </div>
 
                     {/* Side Menu */}
-                    <SideMenu></SideMenu>
+                    <SideMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
                     {/* Logo, Name, Occupation */}
                     <div className="name-title">
