@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import "../../App.css"
+import emailjs from "@emailjs/browser";
 
 import { useState } from "react";
 
@@ -18,21 +19,20 @@ const Contact = () => {
         setStatus("Sending...");
     
         emailjs
-            .sendForm(
-                "service_egihr2a", // EmailJS Service ID
-                "default_template", // EmailJS Template ID
+        .sendForm(
+                "service_egihr2a",
+                "default_template",
                 e.target,
-                "8hYkyWFqPa0ly9QD0" // EmailJS Public Key
+                "8hYkyWFqPa0ly9QD0"
             )
-            .then(
-                () => {
-                    setStatus("Message sent! Thank you for reaching out.");
-                    e.target.reset(); // Reset form fields
-                },
-                () => {
-                    setStatus("Failed to send message. Please try again later.");
-                }
-            );
+            .then(() => {
+                setStatus("Message sent! Thank you for reaching out.");
+                e.target.reset();
+            })
+            .catch((err) => {
+                console.error("EmailJS error:", err);
+                setStatus("Failed to send message. Please try again later.");
+            });
     };
 
     return (

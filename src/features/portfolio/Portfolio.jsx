@@ -108,7 +108,7 @@ const Portfolio = () => {
             behanceLink: "",
             githubLink: "https://github.com/LandonLinn/Personal-Website",      
             overview: "Designed and developed my personal portfolio to reflect my development and UX skills—with mobile-first responsive layouts, SEO-friendly structure, and smooth animations for enhanced user engagement.",  
-            tools: ["HTML", "CSS (Flexbox & Grid)", "JavaScript (ES6+)", "React", "Vite.js"],
+            tools: ["HTML", "CSS (Flexbox & Grid)", "JavaScript (ES6+)", "React", "Vite.js", "Email.js"],
             features: [
                 "Responsive design across 320px–4K.",
                 "SEO-optimized meta tags.",
@@ -238,6 +238,8 @@ const Portfolio = () => {
                                         autoPlay
                                         muted
                                         loop
+                                        playsInline 
+                                        webkit-playsinline
                                     />
                                     )}
                                 </div>

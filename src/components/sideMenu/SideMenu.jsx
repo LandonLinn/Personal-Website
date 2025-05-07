@@ -10,7 +10,7 @@ import NameLogo from "../namelogo/NameLogo";
 import SocialButts from "../socialButtons/SocialButts";
 import ResumeDown from "../resumeButton/ResumeDown";
 
-const SideMenu = ({ isOpen, onClose}) => {
+const SideMenu = ({ isOpen, onClose }) => {
 
     return(
         <div
@@ -30,12 +30,14 @@ const SideMenu = ({ isOpen, onClose}) => {
                         <img src={headshot} className="sidemenu-headshot" alt="My Headshot on Side Menu" />
                         <hr className="divider" />
                     </div>
-                    
 
-                    <div className="sidemenu-components">
+                    <div 
+                        className="sidemenu-components" 
+                        onClick={onClose}
+                    >
                         <div className="sidemenu-info">
-                            <NameLogo></NameLogo>
-                            <SocialButts></SocialButts>
+                            <NameLogo /> 
+                            <SocialButts />
                         </div>
                         
                         <hr className="divider" />
@@ -46,7 +48,7 @@ const SideMenu = ({ isOpen, onClose}) => {
 
                         <hr className="divider" />
                         
-                        <ResumeDown></ResumeDown>
+                        <ResumeDown />
 
                     </div>
                 </div>

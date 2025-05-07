@@ -44,9 +44,3 @@ h1{
         grid-template-columns: 20px minmax(0, 400px) 20px;
     }
 }
-
-@media screen and (max-width: 376px) {
-    .app-container {
-        grid-template-columns: 20px minmax(0, 320px) 20px;
-    }
-}
