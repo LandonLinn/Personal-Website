@@ -1,6 +1,17 @@
-.contactPage-container{
+.contactPage{
     grid-area: contact;
-    margin-top: 120px;
+
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    grid-template-areas: 
+        ". inside .";
+}
+
+.contactPage-container{
+    grid-area: inside;
+    min-height: 100vh;
+    width: 100%;
+    margin: 120px 0px 100px 0px;
 }
 
 .contactCard-container{
@@ -129,4 +140,35 @@
 }
 .status.error {
     color: red;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contactPage{
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactCard-container{
+        flex-direction: column;
+    }
+
+    .contactCard{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .contactPage{
+        padding: 0px;
+    }
+
+    .contactPage-container{
+        margin: 90px 0px 50px 0px;
+    }
+
+    .contactForm button{
+        width: 100%;
+    }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { toTop } from '../../utils/helpers';
 
 // Components
 import ResumeDown from "../../components/resumeButton/ResumeDown";

@@ -39,7 +39,7 @@ footer{
     gap: 50%;
 }
 
-.footer-nav .nav-bar{
+.footer-nav .nav-bar-links{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,5 +72,30 @@ footer{
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 426px) {
+
+    footer{
+        padding: 20px;
+    }
+
+    .logo-container{
+        align-items: center;
+    }
+
+    .footer-butts{
+        align-items: center;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav .nav-bar-links{
+        align-items: center;
+    }
 }
 

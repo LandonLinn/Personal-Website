@@ -17,7 +17,7 @@ function App() {
   return (
     <>
     <Router>
-        <Header className='header' />
+        <Header />
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Portfolio" element={<Portpage />} />

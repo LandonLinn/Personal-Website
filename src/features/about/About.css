@@ -77,4 +77,16 @@
 .header-butt:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 426px){
+  .about-container{
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .dropdown-title{
+    font-size: 1.2rem;
+  }
+}
   

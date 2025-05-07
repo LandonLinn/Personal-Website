@@ -11,6 +11,7 @@ const Hero = () => {
             <div class="hero-section">
                 <div class="hero-img">
                     <img src="../src/assets/Headshot-colored.png" alt="Landon's Headshot" />
+                    <hr className="divider" />
                 </div>
                 <div class="hero-description">
                     <h1>Hey, I'm <span>Landon Linn</span></h1>

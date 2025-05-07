@@ -33,12 +33,12 @@ const Header = () => {
 
                     {/* Logo, Name, Occupation */}
                     <div className="name-title">
-                        <NameLogo></NameLogo>
+                        <NameLogo />
                     </div>
 
                     {/* Nav Bar */}
                     <div className="nav-bar">
-                        <Nav></Nav> 
+                        <Nav onLinkClick={() => setIsOpen(false)} />
                     </div>
                 </div>
             </div>

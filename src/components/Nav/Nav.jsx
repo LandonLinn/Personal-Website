@@ -7,7 +7,7 @@ import { Link } from "react-router";
 import { Link as ScrollLink } from "react-scroll";
 import { useLocation, useNavigate } from "react-router";;
 
-const Nav = () => {
+const Nav = ({ onLinkClick }) => {
 
     const location = useLocation(); // Store useLocation as const variable
     const navigate = useNavigate(); // Store useNavigate as const variable
@@ -21,6 +21,7 @@ const Nav = () => {
             navigate("/");
             window.scrollTo({top: "0"});
         }
+        onLinkClick(); // Close sidemenu if open
     };
 
     const handleAboutClick = () => {
@@ -37,7 +38,12 @@ const Nav = () => {
 
     return(
         <nav className="nav-bar-links">
-            <Link to="/" onClick={handleHomeClick}>Home</Link>
+            <Link 
+                to="/"
+                onClick={handleHomeClick}
+            >
+                Home
+            </Link>
 
             <ScrollLink
                 to="about-container"
@@ -69,7 +75,15 @@ const Nav = () => {
                 Skills
             </ScrollLink>
 
-            <Link to="/Contact" onClick={toTop}>Contact</Link>
+            <Link 
+                to="/Contact" 
+                onClick={() => {
+                    toTop();
+                    onLinkClick();            
+                }}
+            >
+                Contact
+            </Link>
 
             {/* <Link 
                 to="/Hire"

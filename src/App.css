@@ -15,6 +15,7 @@ body{
         " . hero ."
         "about about about"
         ". portfolio ."
+        "portpage portpage portpage"
         ". skills ."
         ". contact ."
         ". hire ."
@@ -38,18 +39,14 @@ h1{
     color: #fa940d;
 }
 
-.header{
-    grid-area: header;
+@media screen and (max-width: 426px) {
+    .app-container {
+        grid-template-columns: 20px minmax(0, 400px) 20px;
+    }
 }
 
-.hero{
-    grid-area: hero;
-}
-
-.about{
-    grid-area: about;
-}
-
-.portfolio{
-    grid-area: portfolio;
+@media screen and (max-width: 376px) {
+    .app-container {
+        grid-template-columns: 20px minmax(0, 320px) 20px;
+    }
 }

@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+
 }
 
 .portCard-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     margin-bottom: 25px; 
 }
@@ -69,6 +70,7 @@
 
 .video,
 .screenshot {
+    width: 100%;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.279) 2px 2px 4px;
@@ -95,5 +97,24 @@
 .projectLinks:hover{
     text-decoration: underline;
     color: #fa940d;
+}
+
+@media screen and (max-width: 376px) {
+    .modalTitle, 
+    .tagLine{
+        font-size: .8rem;
+    }
+
+    .modalContent p, li {
+        font-size: .8rem;
+    }
+}
+
+
+@media screen and (max-width: 321px) {
+    .modalTitle, 
+    .tagLine{
+        font-size: .6rem;
+    }
 }
 
