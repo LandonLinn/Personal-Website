@@ -1,6 +1,9 @@
 import React from "react";
 import "./Portcard.css"
 
+// Import Images
+import extLinkIcon from "../../assets/icons/external-link-icon.svg"
+
 
 const Portcard = ({coverImg, title, tag, desc, demoLink, onDetailsClick}) => {
     return(
@@ -18,7 +21,7 @@ const Portcard = ({coverImg, title, tag, desc, demoLink, onDetailsClick}) => {
                 <div className="cardLinks">
                     <a href={demoLink} target="_blank" rel="noopener noreferrer" className="card-link">
                         Live Demo
-                        <img src='../../src/assets/icons/external-link-icon.svg' className="external-link" alt="arrow" />
+                        <img src={extLinkIcon} className="external-link" alt="arrow" />
                     </a>
                 </div>
 

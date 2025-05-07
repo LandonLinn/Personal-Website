@@ -4,6 +4,11 @@ import "../../App.css"
 
 import { useState } from "react";
 
+// Import images
+import phoneIcon from "../../assets/icons/phone.png";
+import mailIcon from "../../assets/icons/mail.png"
+import locationIcon from "../../assets/icons/location.png";
+
 const Contact = () => {
 
     const [status, setStatus] = useState("");
@@ -39,15 +44,15 @@ const Contact = () => {
                     {/* Contact Cards */}
                     <div className="contactCard-container">
                         <div className="contactCard">
-                            <img src="../src/assets/icons/phone.png" alt="Phone Icon" className="contactCard-icon" />
+                            <img src={phoneIcon} alt="Phone Icon" className="contactCard-icon" />
                             <a href="tel:678-772-3174" className="contactLink">678-772-3174</a>
                         </div>
                         <div className="contactCard">
-                            <img src="../src/assets/icons/mail.png" alt="Mail Icon" className="contactCard-icon" />
+                            <img src={mailIcon} alt="Mail Icon" className="contactCard-icon" />
                             <a href="mailto:landonlinn1@gmail.com" className="contactLink">landonlinn1@gmail.com</a>
                         </div>
                         <div className="contactCard">
-                            <img src="../src/assets/icons/location.png" alt="Location Icon" className="contactCard-icon" />
+                            <img src={locationIcon} alt="Location Icon" className="contactCard-icon" />
                             <a href="https://www.google.com/search?q=alpharetta+ga&oq=Alpharetta&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDINCAYQLhivARjHARiABDIGCAcQRRg90gEIMjM2NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank" className="contactLink">Alpharetta, GA</a>
                         </div>
                     </div>

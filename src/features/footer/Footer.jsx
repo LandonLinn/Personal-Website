@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
 
+// Import Images
+import personalLogo from "../../assets/Personal-Logo-Transparent.png"
+
 // Components
 import ResumeDown from "../../components/resumeButton/ResumeDown";
 import SocialButts from "../../components/socialButtons/SocialButts";
@@ -47,7 +50,7 @@ const Footer = () => {
                 <div class="footer-container">
                     <div class="logo-container">
                         <div class="name-info">
-                            <img src="../src/assets/Personal Logo - Transparent.png" alt="Personal Logo" class="logo" />
+                            <img src={personalLogo} alt="Personal Logo" class="logo" />
                             <div class="name-occ">
                                 <h2>Landon Linn</h2>
                                 <p>Software Developer</p>
@@ -61,7 +64,7 @@ const Footer = () => {
                     <div class="footer-nav-container">
                         <div class="footer-nav">
                             <h3>Explore</h3>
-                            <Nav></Nav>
+                            <Nav />
                         </div>
                     </div>
                     

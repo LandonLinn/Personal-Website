@@ -1,6 +1,9 @@
 import React from "react";
 import "./SideMenu.css";
 
+// Import Images
+import headshot from "../../assets/Headshot-colored.png"
+
 // Import Components
 import Nav from "../Nav/Nav";
 import NameLogo from "../namelogo/NameLogo";
@@ -24,7 +27,7 @@ const SideMenu = ({ isOpen, onClose}) => {
                 {/* Card Content */}
                 <div className="sidemenu-content" >
                     <div className="headshot">
-                        <img src="../../src/assets/Headshot-colored.png" className="sidemenu-headshot" alt="My Headshot on Side Menu" />
+                        <img src={headshot} className="sidemenu-headshot" alt="My Headshot on Side Menu" />
                         <hr className="divider" />
                     </div>
                     

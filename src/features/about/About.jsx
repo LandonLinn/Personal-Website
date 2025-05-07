@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./About.css"; // Optional, if you’re using a CSS file for styling
 
+// Import Images
+import ibmBadge from "../../assets/icons/IBM-fullstack-badge.png";
+import googleBadge from "../../assets/icons/Google-UX-Badge.png";
+import metaBadge from "../../assets/icons/Meta-Front-End-Badge.png";
+
 const About = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
@@ -103,7 +108,7 @@ const About = () => {
         {expandedSection === "certs" && (
           <div className="dropdown-content">
             <div className="certTitle">
-              <img src="../src/assets/icons/IBM-fullstack-badge.png" alt="IBM Full Stack Badge" />
+              <img src={ibmBadge} alt="IBM Full Stack Badge" />
               <h3>IBM Full Stack Software Developer (Expected April 2025)</h3>
             </div>
             <ul>
@@ -124,7 +129,7 @@ const About = () => {
             </ul>
 
             <div className="certTitle">
-              <img src="../src/assets/icons/Google-UX-Badge.png" alt="Google UX Badge" />
+              <img src={googleBadge} alt="Google UX Badge" />
               <h3>Google UX Design Certification (Completed Sept 2024)</h3>
             </div>
             <a
@@ -149,7 +154,7 @@ const About = () => {
             </ul>
 
             <div className="certTitle">
-              <img src="../src/assets/icons/Meta-Front-End-Badge.png" alt="Meta Front-End Badge" />
+              <img src={metaBadge} alt="Meta Front-End Badge" />
               <h3>Meta Front-End Developer (Completed Jan 2025)</h3>
             </div>
             <a

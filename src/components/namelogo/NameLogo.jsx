@@ -2,6 +2,9 @@ import React from "react";
 import "./NameLogo.css";
 import { Link } from "react-router";
 
+// Import asset Images
+import personalLogo from "../../assets/Personal-Logo-Transparent.png"
+
 // Import React elements
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -25,7 +28,7 @@ const NameLogo = () => {
         <div className="name-title">
             <Link to="/" onClick={handleHomeClick}>
                 <div className="name-info">
-                    <img src="/src/assets/Personal Logo - Transparent.png" alt="Personal Logo" className="logo" />
+                    <img src={personalLogo} alt="Personal Logo" className="logo" />
                     <div className="name-occ">
                         <h2>Landon Linn</h2>
                         <p>Software Developer</p>

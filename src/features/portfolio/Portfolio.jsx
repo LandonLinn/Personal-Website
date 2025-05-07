@@ -4,6 +4,25 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { toTop } from '../../utils/helpers';
 
+// Import Images
+// -- IBC Website Project
+import ibcCoverImg from "../../assets/Portfolio Images/IBC/IBCTraffic Website.png";
+import beforeIbcHome from "../../assets/Portfolio Images/IBC/Before/ibctraffic.com_.png";
+import beforeIbcOverview from "../../assets/Portfolio Images/IBC/Before/ibctraffic.com_overview.png";
+import beforeIbcContact from "../../assets/Portfolio Images/IBC/Before/ibctraffic.com_contact-us.png";
+import afterIbcHome from "../../assets/Portfolio Images/IBC/After/www.ibctraffic.com_.png";
+import afterIbcAbout from "../../assets/Portfolio Images/IBC/After/www.ibctraffic.com_about.png";
+import afterIbcContact from "../../assets/Portfolio Images/IBC/After/www.ibctraffic.com_contact.png";
+import afterIbcInsights from "../../assets/Portfolio Images/IBC/After/www.ibctraffic.com_insights-news.png";
+import afterIbcDemoVid from "../../assets/Portfolio Images/IBC/After/IBCVid.mp4";
+
+// -- Personal Website Project
+import persWebCoverImg from "../../assets/Portfolio Images/Personal_Website/PersWeb_Cover.png";
+import persWebHomepage from "../../assets/Portfolio Images/Personal_Website/PersWeb_Cover.png";
+import persWebPortfolio from "../../assets/Portfolio Images/Personal_Website/PersWeb_Portfolio.png";
+import persWebContact from "../../assets/Portfolio Images/Personal_Website/PersWeb_Contact.png";
+import persWebDemoVid from "../../assets/Portfolio Images/Personal_Website/PerWebVid.mp4";
+
 // Import Components
 import Portcard from "../../components/portfolioCard/Portcard";
 import Modal from "../../components/modal/Modal";
@@ -17,7 +36,7 @@ const Portfolio = () => {
         // IBC Traffic
         {
           id: "1",
-          coverImg: "../src/assets/Portfolio Images/IBC/IBCTraffic Website.png",
+          coverImg: ibcCoverImg,
           title: "IBC Traffic Website",
           tag: "Front-End",
           tagline: "Redesigning a Corporate Site for Modern UI/UX",
@@ -37,49 +56,49 @@ const Portfolio = () => {
           ],
           beforeImg: [
             {
-                src: "../src/assets/Portfolio Images/IBC/Before/ibctraffic.com_.png",
+                src: beforeIbcHome,
                 alt: "Before - Homepage",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/IBC/Before/ibctraffic.com_overview.png",
+                src: beforeIbcOverview,
                 alt: "Before - Overview",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/IBC/Before/ibctraffic.com_contact-us.png",
+                src: beforeIbcContact,
                 alt: "Before - Contact Page",
                 size: "wide",
             },
           ],
           afterImg: [
             {
-                src: "../src/assets/Portfolio Images/IBC/After/www.ibctraffic.com_.png",
+                src: afterIbcHome,
                 alt: "After - Homepage",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/IBC/After/www.ibctraffic.com_about.png",
+                src: afterIbcAbout,
                 alt: "After - About Page",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/IBC/After/www.ibctraffic.com_contact.png",
+                src: afterIbcContact,
                 alt: "After - Contact Page",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/IBC/After/www.ibctraffic.com_insights-news.png",
+                src: afterIbcInsights,
                 alt: "After - Insights & News Page",
                 size: "tall",
             },
           ],
-          afterVid: "../src/assets/Portfolio Images/IBC/After/IBCVid.mp4",
+          afterVid: afterIbcDemoVid,
         },
         // Personal Website
         {
             id: "2",
-            coverImg: "../src/assets/Portfolio Images/Personal_Website/PersWeb_Cover.png",
+            coverImg: persWebCoverImg,
             title: "Personal Website",
             tag: "Front-End",
             tagline: "Modern React & Vite portfolio - fast, responsive, and built to showcase my projects.",
@@ -101,23 +120,23 @@ const Portfolio = () => {
             ],
             projImg: [
             {
-                src: "../src/assets/Portfolio Images/Personal_Website/PersWeb_Cover.png",
+                src: persWebHomepage,
                 alt: "Landon's Personal Website - Homepage",
                 size: "tall",
             },
             {
-                src: "../src/assets/Portfolio Images/Personal_Website/PersWeb_Portfolio.png",
+                src: persWebPortfolio,
                 alt: "Landon's Personal Website - Portfolio Page",
                 size: "tall",
             },            
             {
-                src: "../src/assets/Portfolio Images/Personal_Website/PersWeb_Contact.png",
+                src: persWebContact,
                 alt: "Landon's Personal Website - Contact Page",
                 size: "tall",
             },
             
             ],
-            projVid: "../src/assets/Portfolio Images/Personal_Website/PerWebVid.mp4",
+            projVid: persWebDemoVid,
         },
     ];
 
