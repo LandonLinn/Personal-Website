@@ -58,8 +58,7 @@
 }
 
 
-.beforeImg-container,
-.afterImg-container{
+.projImg-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
