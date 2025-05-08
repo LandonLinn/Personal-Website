@@ -17,7 +17,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
 .hero-img{
@@ -61,9 +60,7 @@
     .hero-description h1{
         font-size: 2.5rem;
     }
-}
 
-@media screen and (max-width: 426px) {
     .hero-section{
         flex-direction: column;
     }
@@ -92,6 +89,10 @@
     .hero-description h1{
         font-size: 2.5rem;
     }
+}
+
+@media screen and (max-width: 426px) {
+    
     
 }
 
