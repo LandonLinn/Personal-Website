@@ -17,9 +17,13 @@ const Hero = () => {
                     <hr className="divider" />
                 </div>
                 <div class="hero-description">
-                    <h1>Hey, I'm <span>Landon Linn</span></h1>
+                    <h1>Hello, I'm <span>Landon Linn</span></h1>
                     <h3>Software Developer</h3>
-                    <p>I'm a passionate software developer with a strong foundation in UX design, focused on creating intuitive, user-centered software solutions. With experience in HTML, CSS, JavaScript, and Python, I build scalable websites that not only function well—but feel great to use. I’m always eager to grow through coding, design, and solving real-world tech challenges. Let’s connect and build something amazing!</p>
+                    <p>I'm a passionate software developer with a strong foundation in UX design, 
+                        focused on creating intuitive, user-centered software solutions. With experience 
+                        in HTML, CSS, JavaScript, and Python, I build scalable websites that not only function 
+                        well—but feel great to use. I’m always eager to increase business value through coding, 
+                        design, and solving real-world technical challenges. Let’s connect and build something amazing!</p>
                     <ResumeDown />
                     <SocialButts />
                 </div>

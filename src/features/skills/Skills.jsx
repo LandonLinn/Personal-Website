@@ -353,8 +353,8 @@ const Skills = () => {
         },
         {
             id: "42",
-            icon: "/skillIcons/group leader.png",
-            name: "Group Leadership",
+            icon: "/skillIcons/sdlc.png",
+            name: "SDLC Understanding",
             experience: "",
             category: "pers",
         },

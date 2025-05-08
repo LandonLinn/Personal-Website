@@ -67,35 +67,37 @@ const About = () => {
         </h2>
         {expandedSection === "coursework" && (
           <div className="dropdown-content">
-            <h3>Database Design - UTK Course</h3>
+            <h3>Database Design - UTK</h3>
                 <ul>
                     <li>Studied procedures and techniques in database design and development, including conceptual data modeling,
                     logical database design, and the physical database design process.</li>
                     <li>Gained proficiency in Structured Query Language (SQL) for querying and managing relational databases.</li>
                 </ul>
-                    <h3>Programming for Information Applications - UTK Course</h3>
+                    <h3>Programming for Information Applications - UTK</h3>
                 <ul>
                     <li>Focused on programming languages with an emphasis on data structures, built-in functions, user-defined variables,
                     and syntax control structures for processing and visualizing datasets.</li>
                 </ul>
-                <h3>User Experience Design - UTK Courses & Google UXD Certification</h3>
+                <h3>User Experience Design - UTK & Google UXD Certification</h3>
                 <ul>
                     <li>Developed user-centered design skills, including user research, persona creation, wireframing, and prototyping.</li>
                     <li>Acquired expertise in usability testing and iterative design to enhance product functionality and user satisfaction.</li>
-                    <li>Proficient in design tools such as Figma and Adobe XD for creating high-fidelity prototypes.</li>
+                    <li>Proficient in design tools including Figma and Adobe XD for creating high-fidelity prototypes.</li>
                     <li>Applied accessibility principles to ensure inclusive and user-friendly designs for diverse users.</li>
                 </ul>
-                <h3>Interfaces and Interaction Design - UTK Course</h3>
+                <h3>Interfaces and Interaction Design - UTK</h3>
                 <ul>
                     <li>Explored human-computer interaction (HCI) principles to design intuitive and effective user interfaces</li>
                 </ul>
-                <h3>The Life of Data - UTK Course</h3>
+                <h3>The Life of Data - UTK</h3>
                 <ul>
                     <li>Studied lifecycle stages—creation, selection, storage, sharing, reuse, and preservation—alongside foundational
                     principles of effective data management.</li>
                     <li>Examined ethical concerns such as privacy, governance, bias, and accountability in the creation and use of data.</li>
                     <li>Explored data classification, labor, and governance frameworks to ensure fairness, security, and responsible data
                     practices.</li>
+                    <li>Utilized UTK’s Research and Innovation Center Useability Lab to evaluate websites and how end-users interact with technology.</li>
+                    
                 </ul>
           </div>
         )}
@@ -109,7 +111,7 @@ const About = () => {
           <div className="dropdown-content">
             <div className="certTitle">
               <img src={ibmBadge} alt="IBM Full Stack Badge" />
-              <h3>IBM Full Stack Software Developer (Expected April 2025)</h3>
+              <h3>IBM Full Stack Software Developer (Expected May 2025)</h3>
             </div>
             <ul>
                 <li><span>Front-End Development Fundamentals:</span> Gained a solid understanding of HTML, CSS, and JavaScript for building responsive and interactive web applications.</li>
@@ -169,7 +171,7 @@ const About = () => {
                 <li><span>Front-End Development Fundamentals:</span> Gained a solid understanding of HTML, CSS, and JavaScript for building responsive and interactive web applications.</li>
                 <li><span>Advanced JavaScript Skills:</span> Learned ES6+ syntax, DOM manipulation, and event handling to create dynamic user experiences.</li>
                 <li><span>React Expertise:</span> Built reusable components, managed state with hooks, and developed single-page applications (SPAs) using React.</li>
-                <li><span>Version Control:</span> Used Git and GitHub for collaborative development, version tracking, and deployment workflows.</li>
+                <li><span>Version Control:</span> Utilized Git and GitHub for collaborative development, version tracking, and deployment workflows.</li>
                 <li><span>Web Accessibility:</span> Ensured designs adhere to accessibility standards for inclusive user experiences.</li>
                 <li><span>Responsive Design:</span> Mastered CSS frameworks including Bootstrap and Flexbox/Grid layouts for mobile-friendly interfaces.</li>
                 <li><span>API Integration:</span> Worked with RESTful APIs to fetch, send, and display data dynamically in applications.</li>

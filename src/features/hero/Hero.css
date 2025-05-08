@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-img{
@@ -51,7 +52,7 @@
     color: #fa940d;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 780px) {
     .hero-section img{
         width: 300px;
         object-fit: contain;

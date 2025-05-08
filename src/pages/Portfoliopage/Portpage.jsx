@@ -38,27 +38,27 @@ const Portpage = () => {
         {
             name: "All Projects",
             value: "all",
-            tagline: "A collection of all the projects I have worked on, showcasing practices, tests, and full projects",
+            tagline: "A collection of all the projects I have worked on, showcasing practices, tests, and full projects.",
         }, 
         {
             name: "Front-End",
             value: "front",
-            tagline: "A collection of front-end projects focusing on user interface design, responsiveness, and interactivity",
+            tagline: "A collection of front-end projects focusing on user interface design, responsiveness, and interactivity.",
         }, 
         {
             name: "Back-End",
             value: "back",
-            tagline: "A collection of back-end projects highlighting server-side logic, database management, and API integration",
+            tagline: "A collection of back-end projects highlighting server-side logic, database management, and API integration.",
         },
         {
             name: "Full-Stack",
             value: "full",
-            tagline: "A collection of full-stack projects combining both front-end and back-end technologies to deliver complete solutions",
+            tagline: "A collection of full-stack projects combining both front-end and back-end technologies to deliver complete solutions.",
         }, 
         {
             name: "Graphic Design",
             value: "graphic",
-            tagline: "A collection of graphic design work consisting of UI/UX Designs, Logos, and more",
+            tagline: "A collection of graphic design work consisting of UI/UX Designs, Logos, and more.",
         },
     ];
 
@@ -72,9 +72,9 @@ const Portpage = () => {
               tag: "Front-End",
               category: "Front-End",
               tagline: "Redesigning a Corporate Site for Modern UI/UX",
-              desc: "During my internship at IBC Traffic, I was tasked with redesigning the company’s old website using Squarespace. My primary goal was to enhance the user experience by creating a more intuitive, visually appealing, and mobile-responsive design. I focused on simplifying navigation, optimizing page layouts, and improving overall usability. By leveraging Squarespace’s built-in tools and custom code, I successfully updated the website to better meet the needs of both the company and its clients. I also ensured that the design aligned with the company's brand, making the site more engaging and easier to use. This project allowed me to refine my design skills while learning to work within a website-building platform and collaborating with the team to meet business objectives.",
+              desc: "During my internship at IBC Traffic, I was tasked with redesigning the company’s former website using Squarespace. My primary goal was to enhance the user experience by creating a more intuitive, visually appealing, and mobile-responsive design. I focused on simplifying navigation, optimizing page layouts, and improving overall usability. By leveraging Squarespace’s built-in tools and custom code, I successfully updated the website to better meet the needs of both the company and its clients. I also ensured that the design aligned with the company's brand, making the site more engaging and easier to use. This project allowed me to refine my design skills while learning to work within a website-building platform and collaborating with the team to meet business objectives.",
               role: "Web Developer Intern",
-              overview: "IBC Traffic needed a modern, mobile-friendly website to better showcase their services and improve lead generation",
+              overview: "IBC Traffic needed a modern, mobile-friendly website to better showcase their services and improve lead generation.",
               demoLink: "https://www.ibctraffic.com/",
               behanceLink: "",
               githubLink: "",        
@@ -171,7 +171,7 @@ const Portpage = () => {
                 ],
                 projVid: persWebDemoVid,
             },
-        ];
+    ];
 
     // Open Modal
     const handleOpenModal = (project) => {
