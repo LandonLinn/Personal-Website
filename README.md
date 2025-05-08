@@ -6,12 +6,12 @@
 
 ## 📑 Table of Contents
 
-1. [🔍 Live Preview](#live-preview)  
-2. [📌 About the Project](#about-the-project)  
-3. [✨ Key Features](#key-features)  
-4. [🛠️ Technologies Used](#technologies-used)  
-5. [📘 Lessons Learned](#lessons-learned)  
-6. [📬 Contact](#contact)
+1. [🔍 Live Preview](#-live-preview)  
+2. [📌 About the Project](#-about-the-project)  
+3. [✨ Key Features](#-key-features)  
+4. [🛠️ Technologies Used](#-technologies-used)  
+5. [📘 Lessons Learned](#-lessons-learned)  
+6. [📬 Contact](#-contact)
 
 ---
 
