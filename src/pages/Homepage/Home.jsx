@@ -25,12 +25,12 @@ const Home = () => {
     }, [location]);
 
     return(
-        <div className='app-container'>
+        <main className='app-container'>
             <Hero />
             <About />
             <Portfolio />
             <Skills />
-        </div>
+        </main>
     );
 }
 

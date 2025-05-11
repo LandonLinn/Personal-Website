@@ -76,7 +76,7 @@ const Nav = ({ onLinkClick }) => {
             </ScrollLink>
 
             <Link 
-                to="/Contact" 
+                to="/contact" 
                 onClick={() => {
                     toTop();
                     onLinkClick();            

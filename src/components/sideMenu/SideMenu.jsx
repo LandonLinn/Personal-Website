@@ -2,7 +2,7 @@ import React from "react";
 import "./SideMenu.css";
 
 // Import Images
-import headshot from "../../assets/Headshot-colored.png"
+import headshot from "../../assets/headshot-colored.png"
 
 // Import Components
 import Nav from "../Nav/Nav";

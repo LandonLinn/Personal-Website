@@ -7,7 +7,7 @@ import github   from "../../assets/icons/github-icon.png";
 import behance  from "../../assets/icons/behance-icon.png";
 
 const SocialButts = () => (
-  <div className="social-butts">
+  <div aria-label="Social Media Links" className="social-butts">
     <a
       href="https://www.linkedin.com/in/landon-linn/"
       className="socialLink"

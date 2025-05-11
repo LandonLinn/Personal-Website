@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./About.css"; // Optional, if you’re using a CSS file for styling
 
 // Import Images
-import ibmBadge from "../../assets/icons/IBM-fullstack-badge.png";
-import googleBadge from "../../assets/icons/Google-UX-Badge.png";
-import metaBadge from "../../assets/icons/Meta-Front-End-Badge.png";
+import ibmBadge from "../../assets/icons/ibm-fullstack-badge.png";
+import googleBadge from "../../assets/icons/google-ux-badge.png";
+import metaBadge from "../../assets/icons/meta-frontend-badge.png";
 
 const About = () => {
   const [expandedSection, setExpandedSection] = useState(null);

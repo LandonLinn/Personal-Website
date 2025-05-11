@@ -1,8 +1,7 @@
-import React from "react";
 import "./Hero.css";
 
 // Import Images
-import headshot from "../../assets/Headshot-colored.png"
+import headshot from "../../assets/headshot-colored.png"
 
 // Components
 import ResumeDown from "../../components/resumeButton/ResumeDown";
@@ -13,7 +12,7 @@ const Hero = () => {
         <section class="hero-container">
             <div class="hero-section">
                 <div class="hero-img">
-                    <img src={headshot} alt="Landon's Headshot" />
+                    <img src={headshot} alt="Headshot picture of Landon; He is wearing a black shirt, arms crossed, and smiling." />
                     <hr className="divider" />
                 </div>
                 <div class="hero-description">

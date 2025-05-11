@@ -19,6 +19,7 @@ body{
         ". skills ."
         ". contact ."
         ". hire ."
+        ". 404 ."
         "footer footer footer";
     grid-template-rows: auto 1fr auto;
 }

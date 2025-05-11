@@ -3,7 +3,7 @@ import "./NameLogo.css";
 import { Link } from "react-router";
 
 // Import asset Images
-import personalLogo from "../../assets/Personal-Logo-Transparent.png"
+import personalLogo from "../../assets/personal-logo-transparent.png"
 
 // Import React elements
 import { useLocation, useNavigate } from "react-router-dom";

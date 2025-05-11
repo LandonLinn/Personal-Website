@@ -1,0 +1,50 @@
+.pNF-container{
+    grid-area: 404;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four-o-four{
+    margin: 0px;
+    font-size: 5rem;
+    border: 2px solid #fa940d;
+    color: #fa940d;
+    padding: 25px 50px;
+}
+.pNF-content h2{
+   margin: 0px;
+   color: #1e82bd;
+}
+
+.pNF-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 360px;
+    height: 80vh;
+    padding: 20px;
+}
+
+.returnButt{
+    height: 50px;
+    border: 2px solid #fa940d;
+    border-radius: 8px;
+   
+    width: 50%;
+    min-width: 200px;
+    background: none;
+    color: #fa940d;
+    font-weight: 700;
+}
+
+.returnButt:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #fa940d;
+}

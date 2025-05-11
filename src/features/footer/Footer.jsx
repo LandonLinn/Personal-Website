@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 // Import Images
-import personalLogo from "../../assets/Personal-Logo-Transparent.png"
+import personalLogo from "../../assets/personal-logo-transparent.png"
 
 // Components
 import ResumeDown from "../../components/resumeButton/ResumeDown";
