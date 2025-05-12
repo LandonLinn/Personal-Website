@@ -19,9 +19,9 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Portfolio" element={<Portpage />} />
-            <Route path="/Hire" element={<Hire />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portpage />} />
+            <Route path="/hire" element={<Hire />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

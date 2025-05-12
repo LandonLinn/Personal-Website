@@ -98,7 +98,7 @@ const Portpage = () => {
                         )}
                     </div>
 
-                    <div className="">
+                    <div>
                         {selectedCategory === "all" ? (
                             // Grouped view by category
                             Object.entries(

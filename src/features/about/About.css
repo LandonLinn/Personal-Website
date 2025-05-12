@@ -4,89 +4,276 @@
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
   grid-template-areas: ". inside .";
   width: 100%;
+  height: fit-content;
   background-color: #1e82bd;
   color: white;
   padding: 10px 50px;
   z-index: 1;
 }
 
-.dropdown-title{
-  margin: 1.5rem 0rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.dropdown-title:hover{
-  color: #fa940d;
-}
-
-.content-wrapper {
-  grid-area: inside;
-}
-
-.dropdown-content {
-  margin-top: 0.5rem;
-  padding: 0 1rem;
+.about-and-services{
+  display: grid;
+  grid-template-columns: 1fr 1px 1.5fr;
+  gap: 20px;
   width: 100%;
-  color: white;
+  height: fit-content;
+  margin-bottom: 50px;
 }
 
-.dropdown-content span {
-  color: #fa940d;
-  font-weight: bold;
+.about-and-services h2{
+  margin: 20px 0px 10px 0px;
 }
 
-.certTitle {
+/* Stack Cards */
+.stack-card-container{ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.stack-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 5px;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.stack-img{
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.123));
+}
+
+hr {
+  margin: auto;
+  border: 1px solid #fa940d;
+  height: 50%;
+}
+
+/* Service Section Controls */
+.service-section-controls{
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  justify-content: space-between;
 }
 
-.certTitle img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
+.title-control{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.certLink {
-  display: inline-block;
-  margin: 0.5rem 0 1rem;
+.title-control a{
   color: white;
-  font-weight: bold;
-  text-decoration: underline;
   text-underline-offset: 5px;
 }
 
-.certLink:hover {
+.title-control a:hover{
   color: #fa940d;
 }
 
-.header-butt {
+.service-section-controls a{
+  margin: 20px 0px 10px 0px;
+}
+
+.service-section{
+  height: 100%;
+}
+
+.service-card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+
+.service-card {
+  width: 100%;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.279) 2px 2px 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-card-img-container{
+  border: 2px solid #1e82bd;
+  min-width: 75px;
+  min-height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-img{
+  height: 40px;
+  width: auto;
+}
+
+.card-title{
+  color: #fa940d;font-size: 1.5rem;
+}
+
+.service-card ul{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.service-card li {
+  list-style-type: none;
+  margin: 10px 0px;
+  color: #0f2536;
+}
+
+.service-card a {
+  justify-self: flex-end;
+}
+
+.service-button{
   background: none;
-  border: none;
-  color: white;
+  padding: 10px 30px;
+  border: 2px solid #fa940d;
+  border-radius: 8px;
+  color: #fa940d;
+  font-weight: 700;
   font-size: 1rem;
-  padding: 0;
+}
+
+.service-button:hover{
   cursor: pointer;
-  transition: text-decoration 0.2s ease;
+  background-color: #fa940d;
+  color: white;
 }
 
-.header-butt:hover {
-  text-decoration: underline;
+.card-control{
+  display: flex;
+  gap: 5px;
 }
 
-@media screen and (max-width: 426px){
-  .about-container{
-    padding: 0px 20px;
+.control-button{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #0f2536;
+  font-weight: 700;
+  border: none;
+}
+
+.control-button:hover{
+  cursor: pointer;
+  background-color: rgb(10, 24, 36);
+}
+
+.control-button:focus{
+  background-color: rgb(8, 26, 41);
+}
+
+.control-button:disabled{
+  background-color: rgba(56, 56, 56, 0.486);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Certification Section */
+.cert-section {
+  grid-area: inside;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cert-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px; 
+}
+
+.cert-card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.279) 2px 2px 4px;
+  min-height: 300px;
+  background-color: white;
+}
+
+.cert-card img{
+  width: 100%;
+  aspect-ratio: 16/8;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.cert-card-content{
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cert-badge {
+  height: 40px;
+  width: 50px!important;
+  justify-self: center;
+}
+
+.cert-card-content h3{
+  color: #fa940d;
+}
+
+.cert-card-content p{
+  color: #0f2536;
+  margin-bottom: 20px;
+}
+
+.link-icon{
+  width: 30px!important;
+  height: auto;
+}
+
+@media screen and (max-width: 890px){
+
+  hr{
+    display: none;
+  }
+
+  .about-and-services{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .service-card{
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 376px) {
-  .dropdown-title{
-    font-size: 1.2rem;
-  }
+@media screen and (max-width: 426px) {
+    .about-container {
+        grid-template-columns: 20px minmax(0, 400px) 20px;
+        padding: 0px;
+    }
 }
-  
+
+
+
+

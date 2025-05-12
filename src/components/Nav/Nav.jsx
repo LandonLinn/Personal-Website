@@ -24,17 +24,11 @@ const Nav = ({ onLinkClick }) => {
         onLinkClick(); // Close sidemenu if open
     };
 
-    const handleAboutClick = () => {
-        navigate("/", {state: { scrollTo: "about-section" } });
-    };
-
-    const handlePortClick = () => {
-        navigate("/", {state: { scrollTo: "portfolio-section" } });
-    };
-
-    const handleSkillsClick = () => {
-        navigate("/", {state: { scrollTo: "skills-section" } });
-    };
+    // Handle Section Clicks & Close menu
+    const handleNavClick = (section) => {
+        navigate("/", {state: { scrollTo: section } });
+        onLinkClick();
+    }
 
     return(
         <nav className="nav-bar-links">
@@ -47,7 +41,7 @@ const Nav = ({ onLinkClick }) => {
 
             <ScrollLink
                 to="about-container"
-                onClick={handleAboutClick}
+                onClick={() => handleNavClick("about-container")}
                 smooth={true}
                 duration={500}
                 offset={-80}
@@ -57,7 +51,7 @@ const Nav = ({ onLinkClick }) => {
 
             <ScrollLink
                 to="portfolio-container"
-                onClick={handlePortClick}
+                onClick={() => handleNavClick("portfolio-container")}
                 smooth={true}
                 duration={500}
                 offset={-80}
@@ -67,7 +61,7 @@ const Nav = ({ onLinkClick }) => {
 
             <ScrollLink
                 to="skills-container"
-                onClick={handleSkillsClick}
+                onClick={() => handleNavClick("skills-container")}
                 smooth={true}
                 duration={500}
                 offset={-80}
@@ -85,16 +79,16 @@ const Nav = ({ onLinkClick }) => {
                 Contact
             </Link>
 
-            {/* <Link 
+            <Link 
                 to="/Hire"
-                onClick={toTop}
+                onClick={() => {
+                    toTop();
+                    onLinkClick();            
+                }}
             >
-                <a href="hire.html">
-                    <button className="small-butt glow">
-                        Hire
-                    </button>
-                </a>
-            </Link> */}                       
+                Hire
+                
+            </Link>                     
 
         </nav>
     );

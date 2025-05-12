@@ -132,7 +132,6 @@
 
 .status {
     padding: 10px 0px;
-    color: #333; /* Default */
     font-size: 1rem;
 }
 .status.success {
