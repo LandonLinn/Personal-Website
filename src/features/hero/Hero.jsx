@@ -9,9 +9,9 @@ import SocialButts from "../../components/socialButtons/SocialButts";
 
 const Hero = () => {
     return(
-        <section class="hero-container">
-            <div class="hero-section">
-                <div class="hero-img">
+        <section className="hero-container">
+            <div className="hero-section">
+                <div className="hero-img">
                     <img src={headshot} alt="Headshot picture of Landon; He is wearing a black shirt, arms crossed, and smiling." />
                     <hr className="divider" />
                 </div>
