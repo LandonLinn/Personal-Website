@@ -11,6 +11,7 @@ import Portpage from './pages/Portfoliopage/Portpage';
 import Hire from './pages/Hire/Hire';
 import Contact from './pages/Contact/Contact';
 import PageNotFound from './pages/404/PageNotFound';
+import UpButton from './components/upButton/UpButton';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
+        <UpButton />
     </Router>
     </>
   )

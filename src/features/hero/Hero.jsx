@@ -18,11 +18,11 @@ const Hero = () => {
                 <div class="hero-description">
                     <h1>Hello, I'm <span>Landon Linn</span></h1>
                     <h3>Software Developer</h3>
-                    <p>I'm a passionate software developer with a strong foundation in UX design, 
-                        focused on creating intuitive, user-centered software solutions. With experience 
-                        in HTML, CSS, JavaScript, and Python, I build scalable websites that not only function 
-                        well—but feel great to use. I’m always eager to increase business value through coding, 
-                        design, and solving real-world technical challenges. Let’s connect and build something amazing!</p>
+                    <p>I build clean, scalable, and user-first web experiences with HTML, CSS, JavaScript, 
+                        and Python. With a foundation in UX design and a passion for intuitive software, 
+                        I love solving real-world problems through code. I’m currently open to full-time roles, 
+                        freelance work, and creative collaborations. Let’s build something impactful together!
+</p>
                     <ResumeDown />
                     <SocialButts />
                 </div>

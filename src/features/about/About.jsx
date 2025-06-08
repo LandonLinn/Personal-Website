@@ -52,10 +52,12 @@ const About = () => {
           {/* Experience Section */}
           <div className="experience-section"> 
             <h2>What I do</h2>
-            <p>I’m Landon Linn — a 22-year-old full-stack developer 
-              and UX-focused Information Science student graduating 
-              in May 2025. Based in Alpharetta, GA, I build user-first digital 
-              experiences and am available for freelance, consulting, and collaborations.</p>
+            <p>I’m a 22-year-old full-stack developer 
+              and UX-focused Information Science graduate (May 2025). 
+              Based in Alpharetta, GA, 
+              I specialize in building user-centered digital 
+              products and am actively seeking full-time opportunities. 
+              I’m also available for freelance projects and collaborative work.</p>
 
               <h2>My Stack</h2>
               <div className="stack-card-container">
