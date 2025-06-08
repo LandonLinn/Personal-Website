@@ -9,40 +9,10 @@ import ResumeDown from "../../components/resumeButton/ResumeDown";
 import SocialButts from "../../components/socialButtons/SocialButts";
 import Nav from "../../components/Nav/Nav";
 
-// Import React elements
-import { useLocation, useNavigate } from "react-router";
-
 const Footer = () => {
 
     // Year
     let year = new Date().getFullYear();
-
-    const location = useLocation(); // Store useLocation as const variable
-    const navigate = useNavigate(); // Store useNavigate as const variable
-
-    // If location is on home, scroll to top of Home, else navigate to homepage
-    const handleHomeClick = () => {
-        if (location.pathname === "/") {
-            window.scrollTo({top: "0", behavior: "smooth"});
-        }
-        else{
-            navigate("/");
-            window.scrollTo({top: "0"});
-        }
-    };
-
-    const handleAboutClick = () => {
-        navigate("/", {state: { scrollTo: "about-section" } });
-    };
-
-    const handlePortClick = () => {
-        navigate("/", {state: { scrollTo: "portfolio-section" } });
-    };
-
-    const handleSkillsClick = () => {
-        navigate("/", {state: { scrollTo: "skills-section" } });
-    };
-
 
     return(
         <footer>

@@ -40,8 +40,27 @@ h1{
     color: #fa940d;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 530px) {
     .app-container {
-        grid-template-columns: 20px minmax(0, 400px) 20px;
+        grid-template-columns: 1fr minmax(0, 400px) 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .app-container {
+        grid-template-columns: 1fr minmax(0, 385px) 1fr;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .app-container {
+        grid-template-columns: 1fr minmax(0, 335px) 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .app-container {
+        grid-template-columns: 1fr minmax(0, 280px) 1fr;
     }
 }
