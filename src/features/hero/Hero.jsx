@@ -18,11 +18,14 @@ const Hero = () => {
                 <div class="hero-description">
                     <h1>Hello, I'm <span>Landon Linn</span></h1>
                     <h3>Software Developer</h3>
-                    <p>I build clean, scalable, and user-first web experiences with HTML, CSS, JavaScript, 
-                        and Python. With a foundation in UX design and a passion for intuitive software, 
-                        I love solving real-world problems through code. I’m currently open to full-time roles, 
-                        freelance work, and creative collaborations. Let’s build something impactful together!
-</p>
+                    <p> I build user-first web experiences utilizing HTML, CSS, JavaScript, SQL, and Python. With a
+                        foundation in User Experience Design (UXD) and a passion for intuitive software development, I
+                        strive to solve real-world business challenges through effective coding. In addition to a Bachelor of
+                        Science degree in Information Technology, I have obtained Technical Software Certifications from
+                        IBM, Meta, Google, and Amazon Web Services to further extend my full-stack software development
+                        proficiencies. As a Software Developer, I am currently open to full-time employment and consultative
+                        engagements.
+                    </p>
                     <ResumeDown />
                     <SocialButts />
                 </div>

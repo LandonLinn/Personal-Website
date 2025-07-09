@@ -19,7 +19,7 @@ const Header = () => {
 
     return(
         <header>
-            <div className="content-wrapper">
+            <div className="header-inner">
                 <div className="header-container">
                     {/* Hamburger Menu */}
                     <div className="hamburger-menu" onClick={handleHamMenu}>
@@ -42,6 +42,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            
         </header>
     );
 };

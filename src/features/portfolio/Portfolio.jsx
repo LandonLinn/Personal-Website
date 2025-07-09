@@ -54,7 +54,7 @@ const Portfolio = () => {
                             <hr />
 
                             {/* Role & Project Links */}
-                            <h3>Description:</h3>
+                            <h3>Summary:</h3>
                             <p>{activeProject.desc}</p>
                             <br />
                             <h3>Role:</h3>
@@ -167,7 +167,7 @@ const Portfolio = () => {
                             )}
 
                             {/* Results / What You Learned */}
-                            <h2>Results & Lessons Learned:</h2>
+                            <h2>Key Outcomes:</h2>
                             <ul>
                                 {activeProject.results.map((result, index) => 
                                     <li key={index}>{result}</li>

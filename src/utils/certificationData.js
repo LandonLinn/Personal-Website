@@ -20,7 +20,7 @@ export const certifications = [
         img: "/certifications/ibm-fullstack-cert.png", 
         icon: "/certifications/ibm-fullstack-badge.png",
         name: "IBM Full Stack Software Developer Professional Certificate",
-        completion: "Expected, June 2025",
+        completion: "Expected, August 2025",
         link: "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"
     },
 ];

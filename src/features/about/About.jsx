@@ -52,12 +52,10 @@ const About = () => {
           {/* Experience Section */}
           <div className="experience-section"> 
             <h2>What I do</h2>
-            <p>I’m a 22-year-old full-stack developer 
-              and UX-focused Information Science graduate (May 2025). 
-              Based in Alpharetta, GA, 
-              I specialize in building user-centered digital 
-              products and am actively seeking full-time opportunities. 
-              I’m also available for freelance projects and collaborative work.</p>
+            <p> Aspiring Full-Stack Developer with a solid foundation in front-end development, UX design, and
+                cloud-native technologies. Experienced in building responsive web-based applications using modern
+                development frameworks and technologies. Actively seeking software development opportunities in
+                front-end, back-end, full stack, and UI/UX-focused development roles.</p>
 
               <h2>My Stack</h2>
               <div className="stack-card-container">
@@ -82,7 +80,7 @@ const About = () => {
             {/* Controls */}
             <div className="service-section-controls">
               <div className="title-control">
-                <h2>My Services</h2>
+                <h2>My Capabilities</h2>
                 <Link 
                     to="/hire"
                     onClick={toTop}

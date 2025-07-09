@@ -158,6 +158,12 @@
     }
 }
 
+@media screen and (max-width: 530px) {
+    .contactPage{
+        padding: 0px;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .contactPage{
         padding: 0px;

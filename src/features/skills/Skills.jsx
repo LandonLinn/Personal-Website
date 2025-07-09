@@ -114,7 +114,7 @@ const Skills = () => {
             id: "9",
             icon: "/skillIcons/yaml.png",
             name: "YAML",
-            experience: year - 2022,
+            experience: year - 2024,
             category: "devlang",
         },
 
@@ -123,7 +123,7 @@ const Skills = () => {
             id: "10",
             icon: "/skillIcons/bootstrap.png",
             name: "Bootstrap",
-            experience: year - 2022,
+            experience: year - 2024,
             category: "framelibs",
         },
         {
@@ -422,11 +422,13 @@ const Skills = () => {
                         {groupedSkills.map((skill) => (
                         <div className="skillCard" key={skill.name}>
                             <div className="skillCard-content">
-                            <img src={skill.icon} alt={skill.name} />
-                            <h3>{skill.name}</h3>
-                            {skill.experience !== "" && (
-                                <p>{skill.experience} Years of Experience</p>
-                            )}
+                                <img src={skill.icon} alt={skill.name} />
+                                <h3>{skill.name}</h3>
+                                    {skill.experience !== "" && (
+                                        <p>
+                                            {skill.experience} {skill.experience === 1 ? "Year" : "Years"} of Experience
+                                        </p>
+                                    )}
                             </div>
                         </div>
                         ))}
