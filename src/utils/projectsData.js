@@ -24,7 +24,7 @@ export const projects = [
         coverImg: ibcCoverImg,
         title: "IBC Traffic Website",
         tag: "Front-End",
-        category: "Front-End",
+        category: "front",
         tagline: "Redesigning a Corporate Site for Modern UI/UX",
         desc: "During my internship at IBC Traffic, I was tasked with redesigning the company’s former website using Squarespace. My primary goal was to enhance the user experience by creating a more intuitive, visually appealing, and mobile-responsive design. I focused on simplifying navigation, optimizing page layouts, and improving overall usability. By leveraging Squarespace’s built-in tools and custom code, I successfully updated the website to better meet the needs of both the company and its clients. I also ensured that the design aligned with the company's brand, making the site more engaging and easier to use. This project allowed me to refine my design skills while learning to work within a website-building platform and collaborating with the team to meet business objectives.",
         role: "Web Developer Intern",
@@ -87,7 +87,7 @@ export const projects = [
         coverImg: persWebCoverImg,
         title: "Personal Website",
         tag: "Front-End",
-        category: "Front-End",
+        category: "front",
         tagline: "Modern React & Vite portfolio - fast, responsive, and built to showcase my projects.",
         desc: "A modern portfolio site built from scratch with React and Vite to showcase my projects, blog, and contact form in a fast, accessible, and engaging UI.",
         role: "Software Developer",
@@ -124,5 +124,39 @@ export const projects = [
         
         ],
         projVid: persWebDemoVid,
+    },
+    // To-Do App
+    {
+        id: "3",
+        coverImg: "project_images/ToDo_Cover.png",
+        title: "To-Do List App",
+        tag: "Front-End",
+        category: "front",
+        tagline: "A clean and interactive to-do list app built with HTML, CSS, and JavaScript.",
+        desc: "A lightweight to-do list application showcasing core web development skills—users can seamlessly add, edit, delete, and complete tasks, with dynamic task rendering and a minimalist design.",
+        role: "Software Developer",
+        demoLink: "https://landonlinn.github.io/TodoApp/",
+        behanceLink: "",
+        githubLink: "https://github.com/LandonLinn/TodoApp",
+        overview: "Created to strengthen foundational skills in HTML, CSS, and JavaScript, this project highlights DOM manipulation, responsive design, and usability principles through a fully functional to-do list interface.",
+        tools: ["HTML", "CSS (Flexbox & Grid)", "JavaScript (ES6+)"],
+        features: [
+            "Dynamic task management: add, edit, delete, and mark tasks as complete.",
+            "Minimalist, mobile-first design with a focus on usability.",
+            "Interactive task rendering using DOM manipulation.",
+            "Local storage integration to persist tasks between sessions."
+        ],
+        results: [
+            "Strengthened core web development foundations (HTML, CSS, JS).",
+            "Improved proficiency in DOM manipulation and event handling.",
+            "Enhanced understanding of clean UI/UX design for productivity apps."
+        ],
+        projImg: [
+            {
+                src: "project_images/ToDo_Cover.png",
+                alt: "To-Do List App",
+                size: "tall",
+            },
+        ],
     },
 ];

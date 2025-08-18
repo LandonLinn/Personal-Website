@@ -3,7 +3,7 @@ import './ResumeDown.css';
 const ResumeDown = () => {
     return(
         <div class="resume-butt">
-            <a href="/LandonLinn_Resume_July2025.pdf" download>Download Resume</a>
+            <a href="/Landon_Linn_Resume_ August_2025.pdf" download>Download Resume</a>
         </div>
     );
 };
