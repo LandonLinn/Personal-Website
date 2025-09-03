@@ -17,10 +17,19 @@ export const certifications = [
     },
     {
         id:"3",
+        img: "/certifications/AWS_CloudPract_Cert.png", 
+        icon: "/certifications/AWS_CloudPract_Badge.png",
+        name: "AWS Certified Cloud Practitioner",
+        completion: "Completed, Sep 2, 2025",
+        link: "https://www.credly.com/badges/25b2072b-b566-45cf-8093-9e8ec534b5b2/linked_in_profile"
+    },
+    {
+        id:"4",
         img: "/certifications/ibm-fullstack-cert.png", 
         icon: "/certifications/ibm-fullstack-badge.png",
         name: "IBM Full Stack Software Developer Professional Certificate",
-        completion: "Expected, August 2025",
+        completion: "Expected, September 2025",
         link: "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer"
     },
+    
 ];
