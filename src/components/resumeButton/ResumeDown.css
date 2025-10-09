@@ -1,7 +1,7 @@
 .resume-butt{
     height: 50px;
     width: 100%;
-    border: 2px solid #fa940d;
+    border: 2px solid var(--primary-blue);
     border-radius: 8px;
     width: 50%;
     min-width: 200px;
@@ -15,10 +15,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fa940d;
+    color: var(--primary-blue);
     text-decoration: none;
     background: none;
-    color: #fa940d;
     font-size: 16px;
     font-weight: 700;
 }
@@ -26,6 +25,6 @@
 .resume-butt a:hover{
     cursor: pointer;
     
-    background: #fa940d;
+    background: var(--primary-blue);
     color: white;
 }

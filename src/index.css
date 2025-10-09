@@ -1,6 +1,8 @@
 :root{
     --primary-orange: #fa940d;
     --primary-blue: #1e82bd;
+    --button-gray: gray;
+    --button-hover-gray: rgb(110, 110, 110);
 }
 
 /* Font Families */
