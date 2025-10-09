@@ -15,18 +15,27 @@ const Hero = () => {
                     <img src={headshot} alt="Headshot picture of Landon; He is wearing a black shirt, arms crossed, and smiling." />
                     <hr className="divider" />
                 </div>
-                <div class="hero-description">
-                    <h1>Hello, I'm <span>Landon Linn</span></h1>
-                    <h3>Software Developer</h3>
-                    <p> I build user-first web experiences utilizing HTML, CSS, JavaScript, SQL, and Python. With a
+                <div className="hero-description">
+                    <div className="description-title">
+                        <h2 className="subtitle">Hello,</h2>
+                        <h1 className="title">I'M LANDON LINN</h1>
+                        <h3><em>SOFTWARE DEVELOPER</em></h3>
+                    </div>
+                    
+                    <p> I build user-first web experiences utilizing different strategies. With a
                         foundation in User Experience Design (UXD) and a passion for intuitive software development, I
-                        strive to solve real-world business challenges through effective coding. In addition to a Bachelor of
-                        Science degree in Information Technology, I have obtained Technical Software Certifications from
-                        IBM, Meta, Google, and Amazon Web Services to further extend my full-stack software development
-                        proficiencies. As a Software Developer, I am currently open to full-time employment and consultative
-                        engagements.
+                        strive to solve real-world business challenges.
                     </p>
-                    <ResumeDown />
+                    <div className="hero-buttons-container">
+                        <ResumeDown />
+
+                        {/* Work With Me Button */}
+                        <div class="hero-button">
+                            <a href="https://linniumtechnologies.com/" target="_blank" rel="noopener noreferrer">Work With Me</a>
+                        </div>
+                    </div>
+                    
+
                     <SocialButts />
                 </div>
             </div>

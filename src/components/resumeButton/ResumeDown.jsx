@@ -1,9 +1,12 @@
 import './ResumeDown.css';
 
 const ResumeDown = () => {
+
+    const resume = "/Landon_Linn_Resume_October_2025.pdf"
+
     return(
         <div class="resume-butt">
-            <a href="/Landon_Linn_Resume_ September_2025.pdf" download>Download Resume</a>
+            <a href={resume} download>Download Resume</a>
         </div>
     );
 };

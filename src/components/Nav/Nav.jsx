@@ -77,18 +77,7 @@ const Nav = ({ onLinkClick }) => {
                 }}
             >
                 Contact
-            </Link>
-
-            <Link 
-                to="/Hire"
-                onClick={() => {
-                    toTop();
-                    onLinkClick();            
-                }}
-            >
-                Hire
-                
-            </Link>                     
+            </Link>                    
 
         </nav>
     );

@@ -1,0 +1,37 @@
+:root{
+    --primary-orange: #fa940d;
+    --primary-blue: #1e82bd;
+}
+
+/* Font Families */
+h1, h2, h3, h4, h5, p, a, button, li{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Font Weight */
+h1, h2, h3, h4, h5{
+    font-weight: 900;
+}
+
+/* Sizing */
+h1{
+    font-size: 40px;
+}
+
+/* Margins */
+h1{
+    margin: 16px 0px;
+}
+
+p{
+    margin: 8px 0px 8px 0px;
+}
+
+/* Font Colors */
+.title{
+    color: var(--primary-orange);
+}
+
+.subtitle{
+    color: var(--primary-blue);
+}

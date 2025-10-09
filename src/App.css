@@ -4,7 +4,7 @@
 
 body{
     margin: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .app-container{
@@ -28,16 +28,8 @@ hr{
     border: 1px solid white;
 }
 
-h1{
-    font-size: 2rem;
-}
-
 .content-wrapper{
     grid-area: inside;
-}
-
-.title{
-    color: #fa940d;
 }
 
 @media screen and (max-width: 530px) {
